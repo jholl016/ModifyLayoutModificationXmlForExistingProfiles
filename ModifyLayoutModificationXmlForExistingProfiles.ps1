@@ -19,7 +19,7 @@ foreach ($path in $filesToModify) {
 
 			# delete the IE taskbar pinned item
 			Write-Host "Deleting any taskbar item matching IE."
-			$newcontent = $newcontent -ireplace '<taskbar:([^>]*)?Internet Explorer([^>]*)?\/>', ' '
+			$newcontent = $content -ireplace '<taskbar:([^>]*)?Internet Explorer([^>]*)?\/>', ' '
 
 			# delete the IE start menu pinned item
 			Write-Host "Deleting any Start Menu item matching IE."
